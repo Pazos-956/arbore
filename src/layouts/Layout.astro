@@ -1,0 +1,59 @@
+---
+
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+        <title>Árbore: Centro de dietética en Vigo</title>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta
+            name="description"
+            content="Centro de nutrición y dietética en el centro de Vigo, llevado por Antía Pazos"
+        />
+        <meta name="keywords" content="nutricion, dietetica, Antia, Vigo" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:creator" content="" />
+        <meta
+			name="twitter:description"
+            content="Centro de nutrición y dietética en el centro de Vigo, llevado por Antía Pazos"
+		/>
+		<meta name="twitter:image" content="https://arbore-nutricion.com/og.jpg" />
+
+		<meta property="og:image" content="https://arbore-nutricion/og.jpg" />
+		<meta
+			property="og:description"
+            content="Centro de nutrición y dietética en el centro de Vigo, llevado por Antía Pazos"
+		/>
+		<meta property="og:url" content="https://arbore-nutricion.com" />
+		<meta property="og:site_name" content="Arbore" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+	</head>
+	<body>
+        <Header />
+            <main>
+                <slot />
+            </main>
+        <Footer/>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+        background: #f8f3ed;
+	}
+    .about {
+        background: black;
+        foreground: white;
+    }
+</style>
