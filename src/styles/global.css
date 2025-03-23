@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-fondo: #f8f3ed;
+    --color-verde: #7b8771;
+    --color-verde-texto: #353a1e;
+    --color-marron: #a7755c;
+    --color-marron-press: #895f49;
+    --color-marron-hover: #bd8569;
+}
