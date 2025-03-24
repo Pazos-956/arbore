@@ -1,6 +1,11 @@
+---
+import { Image } from "astro:assets";
+import hero_image from "../assets/images/Hero_image.png";
+---
+
 <div class="flex justify-center">
-    <div class="">
-        <img src="/images/Hero_image.png">
+  <div class="fadein">
+      <Image src={hero_image} alt="Logo de Árbore"/>
     </div>
 </div>
 
@@ -10,61 +15,4 @@ img {
   width: 100%;
   height: auto;
 }
-
-.fade-in {
-  align-items: center;
-  order: 2;
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
-}
-@media (max-width: 960px) {
-  .fade-in {
-    order: 0;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 </style>
