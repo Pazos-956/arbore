@@ -1,20 +1,26 @@
-<div 
-  class="bg-fondo py-10 grid grid-cols-2 lg:grid-cols-3 grid-rows-2 lg:grid-rows-3">
-  <h2 class="text-center col-span-2 text-3xl"> <strong>Artículos</strong> </h2>
-  <div class="flex flex-col items-center">
-    <h2 id="Info" class="py-15 text-2xl text-center"> <strong>Artículo 1</strong> </h2>
-      <p class="text-left indent-4">
-      Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation
-      exquisite perfect nostrud nisi intricate Content. Qui  international first-class nulla ut.
-      Punctual adipisicing, essential lovely queen tempor eiusmod irure. Exclusive izakaya charming
-      </p>
+---
+import { Image } from "astro:assets";
+import hero_image from "../assets/images/placeholder.png";
+---
+<section class="sr-only sm:not-sr-only">
+  <h2 class="pt-10 text-center text-3xl"> <strong>Artículos</strong> </h2>
+  <div 
+    class="px-100 bg-fondo py-10 justify-items-center place-content-center content-center grid grid-cols-2 grid-rows-2 lg:grid-cols-2 lg:grid-rows-2">
+    <div class="size-4/6 flex flex-col">
+      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="500" height="500"/>
+      <h2 id="Info" class="indent-5 pt-7 text-2xl text-left"> <strong>Artículo 1</strong> </h2>
+    </div>
+    <div class="size-4/6 flex flex-col">
+      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="500" height="500"/>
+      <h2 id="Info" class="indent-5 pt-7 text-2xl text-left"> <strong>Artículo 1</strong> </h2>
+    </div>
+    <div class="size-4/6 py-5 flex flex-col">
+      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="500" height="500"/>
+      <h2 id="Info" class="indent-5 pt-7 text-2xl text-left"> <strong>Artículo 1</strong> </h2>
+    </div>
+    <div class="size-4/6 py-5 flex flex-col">
+      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="500" height="500"/>
+      <h2 id="Info" class="indent-5 pt-7 text-2xl text-left"> <strong>Artículo 1</strong> </h2>
+    </div>
   </div>
-  <div class="flex flex-col items-center ml-10 mr-10">
-    <h2 id="Info" class="py-15 text-2xl text-center"> <strong>Artículo 2</strong> </h2>
-      <p class="text-left indent-4">
-      Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation
-      exquisite perfect nostrud nisi intricate Content. Qui  international first-class nulla ut.
-      Punctual adipisicing, essential lovely queen tempor eiusmod irure. Exclusive izakaya charming
-      </p>
-  </div>
-</div>
+</section>

@@ -1,13 +1,15 @@
 ---
 import { Image } from "astro:assets";
 import hero_image from "../assets/images/Hero_image.png";
+import hero_mobile from "../assets/images/arbore_arbol_centrado.png";
 ---
 
-<div class="flex justify-center">
+<section class="flex justify-center">
   <div class="fadein">
-      <Image src={hero_image} alt="Logo de Árbore"/>
+      <Image class="sr-only sm:not-sr-only" src={hero_image} alt="Logo de Árbore"/>
+      <Image class="sm:hidden" src={hero_mobile} alt="Logo de Árbore"/>
     </div>
-</div>
+</section >
 
 <style>
 
