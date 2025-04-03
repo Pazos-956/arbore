@@ -1,25 +1,25 @@
 ---
 import { Image } from "astro:assets";
-import hero_image from "../assets/images/placeholder.png";
+import hero_image from "@/assets/images/placeholder.png";
 ---
 <section class="sr-only sm:not-sr-only">
   <h2 class="pt-10 text-center text-3xl"> <strong>Artículos</strong> </h2>
   <div 
-    class="px-100 bg-fondo py-10 justify-items-center place-content-center content-center grid grid-cols-2 grid-rows-2 lg:grid-cols-2 lg:grid-rows-2">
+    class="lg:px-100 bg-fondo py-10 justify-items-center place-content-center content-center grid grid-cols-2 grid-rows-2 lg:grid-cols-2 lg:grid-rows-2">
     <div class="size-4/6 flex flex-col">
-      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="500" height="500"/>
+      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="300" height="300"/>
       <h2 id="Info" class="indent-5 pt-7 text-2xl text-left"> <strong>Artículo 1</strong> </h2>
     </div>
     <div class="size-4/6 flex flex-col">
-      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="500" height="500"/>
+      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="300" height="300"/>
       <h2 id="Info" class="indent-5 pt-7 text-2xl text-left"> <strong>Artículo 1</strong> </h2>
     </div>
     <div class="size-4/6 py-5 flex flex-col">
-      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="500" height="500"/>
+      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="300" height="300"/>
       <h2 id="Info" class="indent-5 pt-7 text-2xl text-left"> <strong>Artículo 1</strong> </h2>
     </div>
     <div class="size-4/6 py-5 flex flex-col">
-      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="500" height="500"/>
+      <Image class="rounded-xl self-center" src={hero_image} alt="Imagen de artículo" width="300" height="300"/>
       <h2 id="Info" class="indent-5 pt-7 text-2xl text-left"> <strong>Artículo 1</strong> </h2>
     </div>
   </div>
